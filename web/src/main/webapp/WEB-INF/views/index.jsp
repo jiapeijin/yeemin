@@ -14,7 +14,7 @@
 </head>
 <body>
 hello<br>
-<form action="/service-gyy/addUser" method="post">
+<form action="/yeemin/addUser" method="post">
     <input name="username" type="text" />
     <input name="password" type="password" />
     <input type="submit" value="submit">
@@ -27,7 +27,7 @@ ${currentUserId}
 </body>
 <script type="text/javascript">
 $().ready(function() {
-    $.post('/service-gyy/model', {}, function (data) {
+    $.post('/yeemin/model', {}, function (data) {
         console.log(data);
         var obj = eval('('+data+')');
         console.log(obj);
