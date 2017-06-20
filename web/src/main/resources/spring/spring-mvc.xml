@@ -33,6 +33,7 @@
 
     <context:component-scan base-package="com.champion">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
     </context:component-scan>
 
     <!-- 视图解析器 -->
@@ -59,5 +60,7 @@
     <bean id="cacheBase" class="com.champion.framework.cache.CacheBase" >
         <property name="cacheManager" ref="ehCacheManager" />
     </bean>
+	
+	
 
 </beans>
